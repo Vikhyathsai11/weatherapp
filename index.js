@@ -6,7 +6,7 @@ const popularCities = ['NYC','Hyderabad','bangkok','delhi','amsterdam']
 
 handleButtonClick.addEventListener('click', () => {
     const city = cityInput.value;
-    fetch(`http://api.weatherapi.com/v1/current.json?key=d3b3f42c5cc94d8b9b5152123220605&q=${city}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=d3b3f42c5cc94d8b9b5152123220605&q=${city}&aqi=no`)
         .then(response => response.json())
         .then(data => {
             console.log(data);
