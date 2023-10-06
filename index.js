@@ -13,7 +13,7 @@ handleButtonClick.addEventListener('click', () => {
             const resultHTML = `
                 <h2>${data.location.name.toUpperCase()}</h2>
                 <p>Temperature: ${data.current.temp_c}°C</p>
-                <p>Humidity: ${data.current.humidity}°C</p>
+                <p>Humidity: ${data.current.humidity}%</p>
                 <p>Condition: ${data.current.condition.text}</p>
                 <img src=${data.current.condition.icon} alt="Weather Icon">
             `;
